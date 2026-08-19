@@ -60,14 +60,14 @@
   <!-- ===== NAVBAR ===== -->
   <header class="fixed top-0 left-0 w-full bg-surface shadow-soft z-50 h-16 px-4 md:px-8 flex items-center justify-between">
     <a href="#" class="flex items-center gap-2 no-underline">
-      <span class="font-virgo text-3xl font-bold text-primary">P</span>
+      <!-- "P" অক্ষরটি সরানো হয়েছে -->
       <span class="font-outfit text-xl font-semibold text-primary tracking-tight">MadeBy‑Parrot</span>
     </a>
 
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
       <a href="#features" class="hover:text-primary-light transition">Features</a>
       <a href="#how-it-works" class="hover:text-primary-light transition">How It Works</a>
-      <a href="#collections" class="hover:text-primary-light transition">Collections</a>
+      <a href="#download" class="hover:text-primary-light transition">Download</a>
       <a href="#contact" class="hover:text-primary-light transition">Contact</a>
       <button class="bg-accent-green text-white px-5 py-2.5 rounded-btn font-semibold hover:bg-opacity-90 transition shadow-soft">
         Start Building
@@ -83,7 +83,7 @@
   <div id="mobileMenu" class="hidden fixed top-16 left-0 w-full bg-surface shadow-soft z-40 md:hidden flex-col items-center gap-4 py-6 px-4 border-t">
     <a href="#features" class="text-primary font-medium">Features</a>
     <a href="#how-it-works" class="text-primary font-medium">How It Works</a>
-    <a href="#collections" class="text-primary font-medium">Collections</a>
+    <a href="#download" class="text-primary font-medium">Download</a>
     <a href="#contact" class="text-primary font-medium">Contact</a>
     <button class="bg-accent-green text-white px-6 py-2.5 rounded-btn font-semibold hover:bg-opacity-90 transition w-48">
       Start Building
@@ -293,31 +293,30 @@
       </div>
     </section>
 
-    <!-- ===== FUTURE INTEGRATIONS ===== -->
-    <section class="section-anchor py-16 px-4 bg-surface">
+    <!-- ===== NEW DOWNLOAD SECTION (Future Integrations এর জায়গায়) ===== -->
+    <section id="download" class="section-anchor py-16 px-4 bg-surface">
       <div class="max-w-6xl mx-auto">
-        <h2 class="font-outfit text-3xl md:text-4xl font-bold text-center mb-12">Future Integrations <span class="text-sm font-normal text-primary-light ml-2">Coming Soon</span></h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="bg-background rounded-card p-6 shadow-soft hover:-translate-y-1 hover:shadow-soft-lg transition duration-300 opacity-70 relative">
-            <span class="absolute top-2 right-2 bg-gray-300 text-gray-600 text-[10px] font-semibold px-2 py-0.5 rounded-full">Soon</span>
-            <span class="material-icons text-3xl text-primary-light mb-2">login</span>
-            <h3 class="font-outfit font-medium">Login / Signup</h3>
+        <h2 class="font-outfit text-3xl md:text-4xl font-bold text-center mb-12">Download MadeBy‑Parrot</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          
+          <!-- Parrot Store Card -->
+          <div class="bg-background rounded-card p-8 shadow-soft hover:-translate-y-1 hover:shadow-soft-lg transition duration-300 text-center flex flex-col items-center border border-gray-100">
+            <span class="material-icons text-4xl text-primary mb-4">storefront</span>
+            <h3 class="font-outfit text-xl font-semibold mb-2">Parrot Store</h3>
+            <p class="text-primary-light text-sm mb-4">Visit our official store to download the app securely.</p>
+            <!-- আপনি পরে href="#" এর জায়গায় আপনার স্টোরের লিংক বসিয়ে দেবেন -->
+            <a href="#" class="bg-primary text-white px-6 py-2.5 rounded-btn font-semibold hover:bg-primary-dark transition shadow-soft w-full sm:w-auto">Visit Store</a>
           </div>
-          <div class="bg-background rounded-card p-6 shadow-soft hover:-translate-y-1 hover:shadow-soft-lg transition duration-300 opacity-70 relative">
-            <span class="absolute top-2 right-2 bg-gray-300 text-gray-600 text-[10px] font-semibold px-2 py-0.5 rounded-full">Soon</span>
-            <span class="material-icons text-3xl text-primary-light mb-2">cloud</span>
-            <h3 class="font-outfit font-medium">Firebase</h3>
+
+          <!-- APK Download Card -->
+          <div class="bg-background rounded-card p-8 shadow-soft hover:-translate-y-1 hover:shadow-soft-lg transition duration-300 text-center flex flex-col items-center border border-gray-100">
+            <span class="material-icons text-4xl text-primary mb-4">download</span>
+            <h3 class="font-outfit text-xl font-semibold mb-2">Direct APK</h3>
+            <p class="text-primary-light text-sm mb-4">Download the latest version directly to your device.</p>
+            <!-- আপনি পরে href="#" এর জায়গায় আপনার APK ফাইলের লিংক বসিয়ে দেবেন -->
+            <a href="#" class="bg-accent-green text-white px-6 py-2.5 rounded-btn font-semibold hover:bg-opacity-90 transition shadow-soft w-full sm:w-auto">Download APK</a>
           </div>
-          <div class="bg-background rounded-card p-6 shadow-soft hover:-translate-y-1 hover:shadow-soft-lg transition duration-300 opacity-70 relative">
-            <span class="absolute top-2 right-2 bg-gray-300 text-gray-600 text-[10px] font-semibold px-2 py-0.5 rounded-full">Soon</span>
-            <span class="material-icons text-3xl text-primary-light mb-2">storage</span>
-            <h3 class="font-outfit font-medium">Supabase</h3>
-          </div>
-          <div class="bg-background rounded-card p-6 shadow-soft hover:-translate-y-1 hover:shadow-soft-lg transition duration-300 opacity-70 relative">
-            <span class="absolute top-2 right-2 bg-gray-300 text-gray-600 text-[10px] font-semibold px-2 py-0.5 rounded-full">Soon</span>
-            <span class="material-icons text-3xl text-primary-light mb-2">api</span>
-            <h3 class="font-outfit font-medium">API Connector</h3>
-          </div>
+
         </div>
       </div>
     </section>
@@ -339,7 +338,8 @@
     <!-- ===== FOOTER ===== -->
     <footer class="bg-primary-dark text-white py-8 px-4 text-center">
       <p class="text-sm opacity-80">
-        [Copyright] 2026-Present. MadeBy‑Parrot powered by <a href="https://parrot.io" target="_blank" rel="noopener noreferrer" class="underline hover:text-accent-green transition">Parrot.io</a>. All Rights Reserved.
+        <!-- [Copyright] এর পরিবর্তে © সিম্বল দেওয়া হয়েছে -->
+        &copy; 2026-Present. MadeBy‑Parrot powered by <a href="https://parrot.io" target="_blank" rel="noopener noreferrer" class="underline hover:text-accent-green transition">Parrot.io</a>. All Rights Reserved.
       </p>
     </footer>
 
